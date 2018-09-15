@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CryptoCards front-end</title>
+        <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript" src="web3.min.js"></script>
+        <script language="javascript" type="text/javascript" src="cryptozombies_abi.js"></script>
+    </head>
+    <body>
+            <div id="txStatus"></div>
+            <div id="tickets"></div>
+            <li>hi</li>
+            <script>
+              var tickets;
+              var concertName;
+           //   var userAccount;
+        
+              function hyTicket(concert) {
+                var hyTicketAddress = "YOUR_CONTRACT_ADDRESS";
+                tickets = new web3js.eth.Contract(hyTicketABI, hyTicketAddress);
+        
+                var accountInterval = setInterval(function() {
+                  
+                  if (web3.eth.accounts[0] !== userAccount) {
+                    userAccount = web3.eth.accounts[0];
+                  }
+                }, 100);
+                
+                concertName = concert;
+
+                tickets.events.Transfer({ filter: { _to: userAccount } })
+                .on("data", function(event) {
+                  let data = event.returnValues;
+                  getCardsByOwner(userAccount).then(displayCards);
+                }).on("error", console.error);
+              }
+        
+              function ticketBuying(ids) {
+                hyTicketAddress.ticketBuying();
+                $("#tickets").empty();             
+                  getCardDetails(id)
+                  .then(function(ticket) {  
+                    $("#tickets").append(`<div class="card">
+                      <ul>
+                        <li>Name: ${concertName} </li>
+                        <li>Column: ${ticket.x_seat}</li>
+                        <li>Row: ${ticket.y_seat}</li>
+                        <li>PhoneNumber: ${ticket.pNumber}</li>
+                      </ul>
+                    </div>`);
+                  });
+                }
+
+              function payment() {
+                $("#txStatus").text("Creating tickets on the blockchain. This may take a while...");
+
+              }
+
+              function ticketEnd() {
+
+              }
+
+              function sendTicket() {
+
+              }
+               
+              window.addEventListener('load', function() {
+                if (typeof web3 !== 'undefined') {
+                  
+                  web3js = new Web3(web3.currentProvider);
+                } else {          
+                }
+                hyTicket();
+              })
+            </script>        
+
+    </body>
+</html>
