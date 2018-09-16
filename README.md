@@ -12,7 +12,7 @@ What it does
 
 How we built it
 
-블록체인 스마트컨트렉트를 통해 콘서트 정보입력과 티켓구매, 사용자인증서비스를 제공합니다. 이 기능을 위해 블록체인 스마트컨트렉트가 필수였지만 HYCON 코어 API에는 스마트컨트렉트를 아직 지원하지 않았습니다. 따라서 이더리움 스마트컨트렉트를 임시적으로 이용하였습니다. 언어는 Solidity를 이용하였습니다. 티켓팅을 진행할 웹은 html, web3, javascript를 이용하였습니다. 모바일 티켓을 보여줄 앱은 안드로이드로 개발을 하였습니다. 또한 앱은 'mousewallet-android-sdk'을 활용하여 개발하였습니다.
+블록체인 스마트컨트렉트를 통해 콘서트 정보입력과 티켓구매, 사용자인증서비스를 제공합니다. 이더리움 스마트컨트렉트를 이용하였습니다. 언어는 Solidity를 이용하였습니다. 티켓팅을 진행할 웹은 html, web3, javascript를 이용하였습니다. 모바일 티켓을 보여줄 앱은 안드로이드로 개발을 하였습니다. 또한 앱은 'mousewallet-android-sdk'을 활용하여 개발하였습니다.
 앱 코드 주소 : https://github.com/mkjyong/HiTicketApp
 
 Accomplishments that we're proud of
