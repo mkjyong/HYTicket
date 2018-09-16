@@ -1,6 +1,8 @@
 # HiTicket
 
 암표문제를 해결하기 위한 HiTicket은 건전한 티켓팅문화를 만듭니다.
+현재는 이더리움 코드로 코딩되어있는 HiTicket은
+삼성 SDS의 NextLedger로의 업그레이드 준비중입니다.
 
 Inspiration
 
