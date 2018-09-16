@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-contract hyTicket {
+contract hiTicket {
 
     event ticketAuth(ticket);
     event ticketingStart(uint);
