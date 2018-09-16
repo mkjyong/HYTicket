@@ -1,8 +1,6 @@
-# HYTicket
+# HiTicket
 
-암표문제를 해결하기 위한 HYTicket은 건전한 티켓팅문화를 만듭니다.
-
-블록트레인 팀, 테이블 24번
+암표문제를 해결하기 위한 HiTicket은 건전한 티켓팅문화를 만듭니다.
 
 Inspiration
 
@@ -15,22 +13,8 @@ What it does
 How we built it
 
 블록체인 스마트컨트렉트를 통해 콘서트 정보입력과 티켓구매, 사용자인증서비스를 제공합니다. 이 기능을 위해 블록체인 스마트컨트렉트가 필수였지만 HYCON 코어 API에는 스마트컨트렉트를 아직 지원하지 않았습니다. 따라서 이더리움 스마트컨트렉트를 임시적으로 이용하였습니다. 언어는 Solidity를 이용하였습니다. 티켓팅을 진행할 웹은 html, web3, javascript를 이용하였습니다. 모바일 티켓을 보여줄 앱은 안드로이드로 개발을 하였습니다. 또한 앱은 'mousewallet-android-sdk'을 활용하여 개발하였습니다.
-앱 코드 주소 : https://github.com/mkjyong/HYTicketApp
-
-나중에 HYCON 스마트컨트렉트가 개발되면 HYCON으로 결제를 하고 HYCON 코어를 이용할 것입니다.
-
-Challenges we ran into
-
-HYCON 코어 이용을 염두해둔 설계(1번 주제), 암표문제 해결(2번 주제)
+앱 코드 주소 : https://github.com/mkjyong/HiTicketApp
 
 Accomplishments that we're proud of
 
-암표문제를 해결하여 건전한 티켓팅문화를 만들 수 있다는 점이 HYTicket의 성취 결과라 생각합니다.
-
-What we learned
-
-첫 아이디어로는 수수료를 줄일 수 있는 결제 시스템을 구상하였습니다. 하지만 "HYCON을 이용하면 수수료가 없다"는 멘토님의 조언을 들었고 HYCON의 기술력에 감탄하게 되었습니다. 팀원들과 함께 1박 2일간 해커톤을 진행하면서 소중한 팀워크를 얻었습니다. 멘토분들, 스태프분들과 대화하며 블록체인에 대해 더욱 심도있는 이해와 토론을 할 수 있었습니다.
-
-What's next for HYTicket
-
-HYCON 코어가 스마트컨트랙트를 지원하게 된다면 HYCON을 이용한 DAPP개발과 HYC를 이용한 결제를 지원할 수 있게 될 것입니다. 또한 웹과 앱의 디자인을 좀 더 매끄럽게 개선할 수 있을 것입니다.
+암표문제를 해결하여 건전한 티켓팅문화를 만들 수 있다는 점이 HiTicket의 성취 결과라 생각합니다.
